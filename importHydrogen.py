@@ -62,7 +62,7 @@ model.rc = pyo.Suffix(direction=pyo.Suffix.IMPORT)
 
 
 # Specify the path towards your solver (gurobi) file
-solver = pyo.SolverFactory('/Users/rezajavadian/Documents/gurobi')
+solver = pyo.SolverFactory('gurobi')
 sol = solver.solve(model)
 
 
